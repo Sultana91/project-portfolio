@@ -1,0 +1,180 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+#header{
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: end;
+    padding: 20px 0;
+    
+    background-color:#BE3144;
+    width:100%;
+
+    
+}
+#nav-bar{
+    font-weight: 400;
+    
+}
+
+.nav-link{
+    padding:40px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 25px;
+    
+   
+
+}
+.nav-link a{
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+/*-------------------section welcom------------*/
+#welcome-section{
+    display: block;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    
+    
+
+}
+h1{
+    font-size: 5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#welcome-section p{
+    font-size: 2rem;
+    font-weight: 20;
+    font-style: italic;
+    color:#BE3144;
+    text-align: center;
+    
+}
+/*------------------------section project---------------*/
+
+.project-tile{
+    padding: 10rem 2rem;
+    margin: 0;
+    text-align: center;
+    background-color: #45567d;
+}
+
+.project-tile > h2{
+    font-size: 3.2rem;
+    color:#fff;
+    
+}
+
+.pro-img{
+    height:calc(100% - 4.8rem);
+    width:100%;
+    object-fit: cover;
+
+
+}
+
+.pro-title{
+    color:white;
+    width:100%;
+    background-color: #303841;
+    margin: -10px 0;
+    padding: 2rem 0;
+}
+
+#projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap:4rem;
+    width:100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+/*---------------contact section-------------*/
+
+.contact{
+    background-color: #303841; 
+    color: #F0F0F0;
+    
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+
+
+
+#contact-header h2{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    margin-bottom: 0;
+    
+}
+
+#contact-header p{
+    font-style: italic;
+    font-size: 17px;
+    color: #F0F0F0;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+}
+
+/*-----------media quary..........*/
+@media (max-width: 800px){
+    h1{
+        font-size: 3rem;
+    }
+    #contact-header h2{
+        font-size: 2rem;
+    }
+    .project-tile > h2{
+        font-size: 2rem;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction:row;
+        justify-content:end;
+        align-items:center;
+        
+    }
+}
